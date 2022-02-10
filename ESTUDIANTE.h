@@ -1,11 +1,14 @@
 #ifndef ESTUDIANTE_H
 #define ESTUDIANTE_H
+#include "string"
+#include "iostream"
+using namespace std;
 
 template <class T>
 class ESTUDIANTE{
     private:
         T EstName;
-        ESTUDIANTE<T> siguiente;
+        ESTUDIANTE<T> *siguiente;
     public:
         ESTUDIANTE(T);
         virtual ~ESTUDIANTE();
@@ -13,7 +16,7 @@ class ESTUDIANTE{
         T getEst();
         void setSig(ESTUDIANTE<T> *);
         ESTUDIANTE<T> *getSig();
-        void print(T);
+        void print();
 };
 
 #endif // ESTUDIANTE_H

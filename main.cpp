@@ -8,19 +8,13 @@ double raiz(double valor, double x, double n){
     cout<<next<<endl;
     x = next;
     n--;
-
     if(n != 0){
         raiz (valor, x, n);
     }
-    else{
-        n = x;
-        x = (valor / x + x) / 2;
-        return(raiz(valor,x,n));
-
 }
 
 int main(){
-    /*CURSO<int> *nuevo = new CURSO<int>(20);
+    CURSO<int> *nuevo = new CURSO<int>(20);
     for(int i=0; i<=10; i++){
         ESTUDIANTE<int> *est = new ESTUDIANTE<int>(i);
         ESTUDIANTE<int> *act = nuevo->getInicio();
@@ -31,13 +25,13 @@ int main(){
     nuevo->mostrar(nuevo->getInicio());
     nuevo->queHago(nuevo->getInicio());*/
 
-    /*bool m = true;
+    bool m = true;
     do{
         int n;
         cout<<"Que numero desea calcular: ";
         cin>>n;
         cout<<endl<<raiz(n,n,0)<<endl;
-    }while(m);*/
+    }while(m);
 
     MULTILISTA<int> *MULTI = new MULTILISTA<int>();
     MULTI->pushCourse(1);

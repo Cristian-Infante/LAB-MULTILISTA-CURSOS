@@ -18,10 +18,12 @@ class CURSO{
         CURSO<T> *getSiguiente();
         void setInicio(ESTUDIANTE<T> *);
         ESTUDIANTE<T> *getInicio();
-        void pushEst(T);
+        void pushEstu(T);
+        void insertar(ESTUDIANTE<T> *, ESTUDIANTE<T> *, ESTUDIANTE<T> *);
         T popEst(T);
-        void printEst();
         void print();
+        void mostrar(ESTUDIANTE<T> *);
+        void queHago(ESTUDIANTE<T> *);
 };
 
 #endif // CURSO_H

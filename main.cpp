@@ -3,13 +3,13 @@
 #include "ESTUDIANTE.cpp"
 
 double raiz(double valor, double x, double n){
-    double next = 0;
-    next = (2*x + (valor/(x*x))/3;
-    cout<<next<<endl;
-    x = next;
-    n--;
-    if(n != 0){
-        raiz (valor, x, n);
+    if(n == x){
+        return (x);
+    }
+    else{
+        n = x;
+        x = ((valor / (x*x)) + 2*x) / 3;
+        return(raiz(valor,x,n));
     }
 }
 
